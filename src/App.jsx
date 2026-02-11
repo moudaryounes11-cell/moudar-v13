@@ -57,6 +57,18 @@ export default function App() {
   const [showImportExport, setShowImportExport] = useState(false);
   const [importExportProject, setImportExportProject] = useState(null);
 
+  // Demo warning banner
+  const [showDemoBanner, setShowDemoBanner] = useState(() => {
+    try { return localStorage.getItem('MOUDAR_BANNER_DISMISSED') !== '1'; } catch { return true; }
+  });
+  // Cookie analytics consent banner
+  const [showCookieBanner, setShowCookieBanner] = useState(() => {
+    try {
+      const consent = localStorage.getItem('MOUDAR_ANALYTICS_CONSENT');
+      return consent !== 'granted' && consent !== 'denied';
+    } catch { return false; }
+  });
+
   // v9.0 - Auto-load Gold Demo project
   useEffect(() => {
     const goldProjectStr = sessionStorage.getItem('MOUDAR_GOLD_PROJECT');
@@ -176,6 +188,72 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50">
+      {/* Demo Warning Banner */}
+      {showDemoBanner && (
+        <div style={{ position: 'sticky', top: 0, zIndex: 9999, background: '#0f172a', color: '#e2e8f0', borderBottom: '1px solid rgba(148,163,184,.35)', padding: '10px 14px', fontFamily: 'system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif', fontSize: '13px', lineHeight: '1.35' }}>
+          <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start', justifyContent: 'space-between' }}>
+            <div>
+              <strong style={{ display: 'inline-block', marginRight: '8px' }}>
+                {lang === 'fr' ? 'Mode d\u00e9monstration' : 'Demo mode'}
+              </strong>
+              <span>
+                {lang === 'fr'
+                  ? '\u00c9vitez de saisir des donn\u00e9es personnelles/patients. Les fonctions Cloud/IA et les analytics ne s\u2019activent qu\u2019avec consentement explicite. Certains indicateurs (benchmarks/leaderboard) peuvent \u00eatre simul\u00e9s en d\u00e9mo.'
+                  : 'Do not enter personal/patient data. Cloud/AI features and analytics only activate with explicit consent. Some indicators (benchmarks/leaderboard) may be simulated in demo.'}
+              </span>
+            </div>
+            <button
+              onClick={() => {
+                try { localStorage.setItem('MOUDAR_BANNER_DISMISSED', '1'); } catch {}
+                setShowDemoBanner(false);
+              }}
+              style={{ background: 'rgba(226,232,240,.12)', border: '1px solid rgba(226,232,240,.25)', color: '#e2e8f0', borderRadius: '10px', padding: '6px 10px', cursor: 'pointer', flexShrink: 0 }}
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Cookie Analytics Consent Banner */}
+      {showCookieBanner && (
+        <div style={{ position: 'fixed', left: '16px', right: '16px', bottom: '16px', zIndex: 9999, background: '#ffffff', border: '1px solid rgba(15,23,42,.15)', borderRadius: '14px', padding: '12px 14px', boxShadow: '0 10px 30px rgba(2,6,23,.12)', fontFamily: 'system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif' }}>
+          <div style={{ display: 'flex', gap: '14px', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+            <div style={{ minWidth: '260px', flex: 1 }}>
+              <div style={{ fontWeight: 700, color: '#0f172a', marginBottom: '4px' }}>
+                {lang === 'fr' ? 'Cookies analytics' : 'Analytics cookies'}
+              </div>
+              <div style={{ fontSize: '13px', lineHeight: '1.35', color: '#334155' }}>
+                {lang === 'fr'
+                  ? 'Nous utilisons des cookies analytics (Google Analytics) uniquement pour mesurer l\u2019usage de la d\u00e9mo. Vous pouvez accepter ou refuser. Le refus n\u2019impacte pas les fonctionnalit\u00e9s.'
+                  : 'We use analytics cookies (Google Analytics) only to measure demo usage. You can accept or decline. Declining does not affect functionality.'}
+              </div>
+            </div>
+            <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+              <button
+                onClick={() => {
+                  try { localStorage.setItem('MOUDAR_ANALYTICS_CONSENT', 'denied'); } catch {}
+                  setShowCookieBanner(false);
+                }}
+                style={{ background: '#f1f5f9', border: '1px solid rgba(15,23,42,.15)', color: '#0f172a', borderRadius: '10px', padding: '8px 10px', cursor: 'pointer' }}
+              >
+                {lang === 'fr' ? 'Refuser' : 'Decline'}
+              </button>
+              <button
+                onClick={() => {
+                  try { localStorage.setItem('MOUDAR_ANALYTICS_CONSENT', 'granted'); } catch {}
+                  setShowCookieBanner(false);
+                  if (window.MOUDAR_loadAnalytics) window.MOUDAR_loadAnalytics();
+                }}
+                style={{ background: '#0f172a', border: '1px solid #0f172a', color: '#ffffff', borderRadius: '10px', padding: '8px 10px', cursor: 'pointer' }}
+              >
+                {lang === 'fr' ? 'Accepter' : 'Accept'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Onboarding overlay */}
       {showOnboarding && (
         <OnboardingWizardView
