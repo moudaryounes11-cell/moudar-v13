@@ -1,0 +1,121 @@
+{"S01": { "id": "S01", "name": "training_education", "label": { "fr": "Formation et éducation", "en": "Training & Education" }, "category": "train_educate", "cost": "medium", "complexity": "low", 
+                        "kpis": [
+                            { "id": "K01a", "indicator": { "fr": "% personnel formé", "en": "% staff trained" }, "target": "≥80%", "frequency": { "fr": "Trimestriel", "en": "Quarterly" }, "source": { "fr": "Registre formation", "en": "Training registry" } },
+                            { "id": "K01b", "indicator": { "fr": "Score post-formation", "en": "Post-training score" }, "target": "≥70/100", "frequency": { "fr": "Post-formation", "en": "Post-training" }, "source": { "fr": "Quiz/évaluation", "en": "Quiz/assessment" } }
+                        ]
+                    },
+                    "S02": { "id": "S02", "name": "audit_feedback", "label": { "fr": "Audit et feedback", "en": "Audit & Feedback" }, "category": "evaluate_iterate", "cost": "low", "complexity": "medium",
+                        "kpis": [
+                            { "id": "K02a", "indicator": { "fr": "Nb audits réalisés", "en": "Number of audits" }, "target": "≥4/an", "frequency": { "fr": "Trimestriel", "en": "Quarterly" }, "source": { "fr": "Rapports audit", "en": "Audit reports" } },
+                            { "id": "K02b", "indicator": { "fr": "% actions correctives mises en œuvre", "en": "% corrective actions implemented" }, "target": "≥75%", "frequency": { "fr": "Mensuel", "en": "Monthly" }, "source": { "fr": "Suivi actions", "en": "Action tracking" } }
+                        ]
+                    },
+                    "S03": { "id": "S03", "name": "facilitation", "label": { "fr": "Facilitation", "en": "Facilitation" }, "category": "support_clinicians", "cost": "medium", "complexity": "medium",
+                        "kpis": [
+                            { "id": "K03a", "indicator": { "fr": "Nb séances facilitation/mois", "en": "Facilitation sessions/month" }, "target": "≥2/mois", "frequency": { "fr": "Mensuel", "en": "Monthly" }, "source": { "fr": "Agenda facilitateur", "en": "Facilitator agenda" } },
+                            { "id": "K03b", "indicator": { "fr": "Satisfaction équipes", "en": "Team satisfaction" }, "target": "≥4/5", "frequency": { "fr": "Trimestriel", "en": "Quarterly" }, "source": { "fr": "Enquête", "en": "Survey" } }
+                        ]
+                    },
+                    "S04": { "id": "S04", "name": "champions", "label": { "fr": "Champions/Leaders d\"opinion", "en": "Champions/Opinion Leaders" }, "category": "develop_stakeholders", "cost": "low", "complexity": "medium",
+                        "kpis": [
+                            { "id": "K04a", "indicator": { "fr": "Nb champions actifs", "en": "Active champions" }, "target": "≥1/site", "frequency": { "fr": "Semestriel", "en": "Biannual" }, "source": { "fr": "Liste champions", "en": "Champion list" } },
+                            { "id": "K04b", "indicator": { "fr": "Nb actions initiées par champions", "en": "Actions initiated by champions" }, "target": "≥3/trimestre", "frequency": { "fr": "Trimestriel", "en": "Quarterly" }, "source": { "fr": "Reporting", "en": "Reporting" } }
+                        ]
+                    },
+                    "S05": { "id": "S05", "name": "reminder_systems", "label": { "fr": "Systèmes de rappel", "en": "Reminder Systems" }, "category": "change_infrastructure", "cost": "low", "complexity": "low",
+                        "kpis": [
+                            { "id": "K05a", "indicator": { "fr": "% rappels déclenchés/attendus", "en": "% reminders triggered/expected" }, "target": "≥90%", "frequency": { "fr": "Mensuel", "en": "Monthly" }, "source": { "fr": "Logs système", "en": "System logs" } },
+                            { "id": "K05b", "indicator": { "fr": "Taux réponse aux rappels", "en": "Response rate to reminders" }, "target": "≥60%", "frequency": { "fr": "Mensuel", "en": "Monthly" }, "source": { "fr": "Données SI", "en": "IS data" } }
+                        ]
+                    },
+                    "S06": { "id": "S06", "name": "financial_incentives", "label": { "fr": "Incitations financières", "en": "Financial Incentives" }, "category": "finance", "cost": "high", "complexity": "medium",
+                        "kpis": [
+                            { "id": "K06a", "indicator": { "fr": "% bénéficiaires ayant reçu incitation", "en": "% beneficiaries receiving incentive" }, "target": "≥95%", "frequency": { "fr": "Mensuel", "en": "Monthly" }, "source": { "fr": "Comptabilité", "en": "Accounting" } },
+                            { "id": "K06b", "indicator": { "fr": "Coût/bénéficiaire", "en": "Cost/beneficiary" }, "target": "Selon budget", "frequency": { "fr": "Trimestriel", "en": "Quarterly" }, "source": { "fr": "Finance", "en": "Finance" } }
+                        ]
+                    },
+                    "S07": { "id": "S07", "name": "policy_change", "label": { "fr": "Changement de politique", "en": "Policy Change" }, "category": "change_infrastructure", "cost": "variable", "complexity": "high",
+                        "kpis": [
+                            { "id": "K07a", "indicator": { "fr": "Politique adoptée (oui/non)", "en": "Policy adopted (yes/no)" }, "target": "Oui", "frequency": { "fr": "Annuel", "en": "Annual" }, "source": { "fr": "Documents officiels", "en": "Official documents" } },
+                            { "id": "K07b", "indicator": { "fr": "% sites appliquant nouvelle politique", "en": "% sites applying new policy" }, "target": "≥80%", "frequency": { "fr": "Semestriel", "en": "Biannual" }, "source": { "fr": "Audit conformité", "en": "Compliance audit" } }
+                        ]
+                    },
+                    "S08": { "id": "S08", "name": "community_engagement", "label": { "fr": "Engagement communautaire", "en": "Community Engagement" }, "category": "engage_consumers", "cost": "medium", "complexity": "medium",
+                        "kpis": [
+                            { "id": "K08a", "indicator": { "fr": "Nb réunions communautaires", "en": "Community meetings held" }, "target": "≥1/mois", "frequency": { "fr": "Mensuel", "en": "Monthly" }, "source": { "fr": "PV réunions", "en": "Meeting minutes" } },
+                            { "id": "K08b", "indicator": { "fr": "Nb participants communautaires", "en": "Community participants" }, "target": "≥20/réunion", "frequency": { "fr": "Par réunion", "en": "Per meeting" }, "source": { "fr": "Feuilles présence", "en": "Attendance sheets" } }
+                        ]
+                    },
+                    "S09": { "id": "S09", "name": "technical_assistance", "label": { "fr": "Assistance technique", "en": "Technical Assistance" }, "category": "support_clinicians", "cost": "medium", "complexity": "low",
+                        "kpis": [
+                            { "id": "K09a", "indicator": { "fr": "Délai moyen réponse support", "en": "Avg support response time" }, "target": "≤24h", "frequency": { "fr": "Mensuel", "en": "Monthly" }, "source": { "fr": "Tickets support", "en": "Support tickets" } },
+                            { "id": "K09b", "indicator": { "fr": "% problèmes résolus", "en": "% issues resolved" }, "target": "≥90%", "frequency": { "fr": "Mensuel", "en": "Monthly" }, "source": { "fr": "Système ticketing", "en": "Ticketing system" } }
+                        ]
+                    },
+                    "S10": { "id": "S10", "name": "supervision", "label": { "fr": "Supervision clinique", "en": "Clinical Supervision" }, "category": "support_clinicians", "cost": "medium", "complexity": "medium",
+                        "kpis": [
+                            { "id": "K10a", "indicator": { "fr": "Heures supervision/mois/équipe", "en": "Supervision hours/month/team" }, "target": "≥8h", "frequency": { "fr": "Mensuel", "en": "Monthly" }, "source": { "fr": "Feuilles temps", "en": "Timesheets" } },
+                            { "id": "K10b", "indicator": { "fr": "% équipes supervisées", "en": "% teams supervised" }, "target": "100%", "frequency": { "fr": "Mensuel", "en": "Monthly" }, "source": { "fr": "Planning supervision", "en": "Supervision schedule" } }
+                        ]
+                    },
+                    "S11": { "id": "S11", "name": "adaptation", "label": { "fr": "Adaptation de l\"intervention", "en": "Intervention Adaptation" }, "category": "adapt_tailor", "cost": "low", "complexity": "medium",
+                        "kpis": [
+                            { "id": "K11a", "indicator": { "fr": "Nb adaptations documentées", "en": "Documented adaptations" }, "target": "Selon contexte", "frequency": { "fr": "Trimestriel", "en": "Quarterly" }, "source": { "fr": "Journal adaptations", "en": "Adaptation log" } },
+                            { "id": "K11b", "indicator": { "fr": "Fidélité aux principes clés", "en": "Fidelity to core principles" }, "target": "≥80%", "frequency": { "fr": "Semestriel", "en": "Biannual" }, "source": { "fr": "Checklist fidélité", "en": "Fidelity checklist" } }
+                        ]
+                    },
+                    "S12": { "id": "S12", "name": "coalition_building", "label": { "fr": "Construction de coalitions", "en": "Coalition Building" }, "category": "develop_stakeholders", "cost": "medium", "complexity": "high",
+                        "kpis": [
+                            { "id": "K12a", "indicator": { "fr": "Nb partenaires actifs", "en": "Active partners" }, "target": "≥5", "frequency": { "fr": "Semestriel", "en": "Biannual" }, "source": { "fr": "Liste partenaires", "en": "Partner list" } },
+                            { "id": "K12b", "indicator": { "fr": "Nb réunions coalition/an", "en": "Coalition meetings/year" }, "target": "≥4", "frequency": { "fr": "Annuel", "en": "Annual" }, "source": { "fr": "PV réunions", "en": "Meeting minutes" } }
+                        ]
+                    },
+                    "S13": { "id": "S13", "name": "data_systems", "label": { "fr": "Systèmes de données", "en": "Data Systems" }, "category": "change_infrastructure", "cost": "high", "complexity": "high",
+                        "kpis": [
+                            { "id": "K13a", "indicator": { "fr": "% données complètes", "en": "% complete data" }, "target": "≥90%", "frequency": { "fr": "Mensuel", "en": "Monthly" }, "source": { "fr": "Audit données", "en": "Data audit" } },
+                            { "id": "K13b", "indicator": { "fr": "Disponibilité système", "en": "System uptime" }, "target": "≥99%", "frequency": { "fr": "Mensuel", "en": "Monthly" }, "source": { "fr": "Monitoring IT", "en": "IT monitoring" } }
+                        ]
+                    },
+                    "S14": { "id": "S14", "name": "learning_collaborative", "label": { "fr": "Collaborative d\"apprentissage", "en": "Learning Collaborative" }, "category": "train_educate", "cost": "medium", "complexity": "medium",
+                        "kpis": [
+                            { "id": "K14a", "indicator": { "fr": "Nb sessions collaborative/an", "en": "Collaborative sessions/year" }, "target": "≥4", "frequency": { "fr": "Trimestriel", "en": "Quarterly" }, "source": { "fr": "Calendrier", "en": "Calendar" } },
+                            { "id": "K14b", "indicator": { "fr": "Taux participation", "en": "Participation rate" }, "target": "≥75%", "frequency": { "fr": "Par session", "en": "Per session" }, "source": { "fr": "Feuilles présence", "en": "Attendance" } }
+                        ]
+                    },
+                    "S15": { "id": "S15", "name": "peer_support", "label": { "fr": "Soutien par les pairs", "en": "Peer Support" }, "category": "support_clinicians", "cost": "low", "complexity": "low",
+                        "kpis": [
+                            { "id": "K15a", "indicator": { "fr": "Nb pairs aidants formés", "en": "Trained peer supporters" }, "target": "≥2/site", "frequency": { "fr": "Annuel", "en": "Annual" }, "source": { "fr": "Registre formation", "en": "Training registry" } },
+                            { "id": "K15b", "indicator": { "fr": "Nb interactions pairs/mois", "en": "Peer interactions/month" }, "target": "≥10", "frequency": { "fr": "Mensuel", "en": "Monthly" }, "source": { "fr": "Journal activité", "en": "Activity log" } }
+                        ]
+                    },
+                    "S16": { "id": "S16", "name": "quality_improvement", "label": { "fr": "Amélioration de la qualité", "en": "Quality Improvement" }, "category": "evaluate_iterate", "cost": "medium", "complexity": "medium",
+                        "kpis": [
+                            { "id": "K16a", "indicator": { "fr": "Nb cycles PDCA complétés", "en": "PDCA cycles completed" }, "target": "≥2/an", "frequency": { "fr": "Semestriel", "en": "Biannual" }, "source": { "fr": "Documentation QI", "en": "QI documentation" } },
+                            { "id": "K16b", "indicator": { "fr": "% indicateurs qualité améliorés", "en": "% quality indicators improved" }, "target": "≥50%", "frequency": { "fr": "Annuel", "en": "Annual" }, "source": { "fr": "Tableau de bord", "en": "Dashboard" } }
+                        ]
+                    },
+                    "S17": { "id": "S17", "name": "centralized_support", "label": { "fr": "Support technique centralisé", "en": "Centralized Technical Support" }, "category": "change_infrastructure", "cost": "high", "complexity": "medium",
+                        "kpis": [
+                            { "id": "K17a", "indicator": { "fr": "Nb sites couverts", "en": "Sites covered" }, "target": "100%", "frequency": { "fr": "Trimestriel", "en": "Quarterly" }, "source": { "fr": "Registre sites", "en": "Site registry" } },
+                            { "id": "K17b", "indicator": { "fr": "Satisfaction sites", "en": "Site satisfaction" }, "target": "≥4/5", "frequency": { "fr": "Semestriel", "en": "Biannual" }, "source": { "fr": "Enquête", "en": "Survey" } }
+                        ]
+                    },
+                    "S18": { "id": "S18", "name": "patient_education", "label": { "fr": "Éducation des patients", "en": "Patient Education" }, "category": "engage_consumers", "cost": "low", "complexity": "low",
+                        "kpis": [
+                            { "id": "K18a", "indicator": { "fr": "% patients ayant reçu éducation", "en": "% patients receiving education" }, "target": "≥80%", "frequency": { "fr": "Mensuel", "en": "Monthly" }, "source": { "fr": "Dossiers patients", "en": "Patient records" } },
+                            { "id": "K18b", "indicator": { "fr": "Score compréhension patient", "en": "Patient understanding score" }, "target": "≥70%", "frequency": { "fr": "Par session", "en": "Per session" }, "source": { "fr": "Quiz patient", "en": "Patient quiz" } }
+                        ]
+                    },
+                    "S19": { "id": "S19", "name": "task_shifting", "label": { "fr": "Transfert de tâches", "en": "Task Shifting" }, "category": "adapt_tailor", "cost": "low", "complexity": "medium",
+                        "kpis": [
+                            { "id": "K19a", "indicator": { "fr": "Nb tâches transférées", "en": "Tasks shifted" }, "target": "Selon plan", "frequency": { "fr": "Trimestriel", "en": "Quarterly" }, "source": { "fr": "Matrice tâches", "en": "Task matrix" } },
+                            { "id": "K19b", "indicator": { "fr": "% agents non-spécialistes opérationnels", "en": "% operational non-specialists" }, "target": "≥90%", "frequency": { "fr": "Semestriel", "en": "Biannual" }, "source": { "fr": "Évaluation compétences", "en": "Skills assessment" } }
+                        ]
+                    },
+                    "S20": { "id": "S20", "name": "stakeholder_engagement", "label": { "fr": "Engagement des parties prenantes", "en": "Stakeholder Engagement" }, "category": "develop_stakeholders", "cost": "low", "complexity": "medium",
+                        "kpis": [
+                            { "id": "K20a", "indicator": { "fr": "Nb parties prenantes engagées", "en": "Stakeholders engaged" }, "target": "≥10", "frequency": { "fr": "Semestriel", "en": "Biannual" }, "source": { "fr": "Cartographie PP", "en": "Stakeholder map" } },
+                            { "id": "K20b", "indicator": { "fr": "Score engagement moyen", "en": "Avg engagement score" }, "target": "≥3/5", "frequency": { "fr": "Annuel", "en": "Annual" }, "source": { "fr": "Enquête PP", "en": "Stakeholder survey" } }
+                        ]
+                    }
+                }}

@@ -1,0 +1,12 @@
+{
+  "frameworks": [
+    { "id": "F01", "name": "CFIR", "label": { "fr": "CFIR - Consolidated Framework", "en": "CFIR - Consolidated Framework" }, "type": "determinant", "focus": ["barriers", "facilitators"], "citation": "Damschroder LJ et al. (2022). Implementation Science, 17:75", "doi": "10.1186/s13012-022-01245-0" },
+    { "id": "F02", "name": "RE-AIM", "label": { "fr": "RE-AIM", "en": "RE-AIM" }, "type": "evaluation", "focus": ["reach", "effectiveness", "adoption", "implementation", "maintenance"], "citation": "Glasgow RE et al. (2019). Frontiers in Public Health, 7:64" },
+    { "id": "F03", "name": "EPIS", "label": { "fr": "EPIS", "en": "EPIS Framework" }, "type": "process", "focus": ["phases", "outer_inner_context"], "citation": "Aarons GA et al. (2011). Admin Policy Ment Health, 38:4-23" },
+    { "id": "F04", "name": "Proctor", "label": { "fr": "Proctor - Outcomes Framework", "en": "Proctor Outcomes Framework" }, "type": "outcome", "focus": ["implementation_outcomes", "service_outcomes", "client_outcomes"], "citation": "Proctor E et al. (2011). Admin Policy Ment Health, 38(2):65-76" },
+    { "id": "F05", "name": "PARIHS", "label": { "fr": "PARIHS/i-PARIHS", "en": "PARIHS/i-PARIHS" }, "type": "determinant", "focus": ["evidence", "context", "facilitation"], "citation": "Harvey G & Kitson A (2016). Implementation Science, 11:33" },
+    { "id": "F06", "name": "NPT", "label": { "fr": "NPT - Normalisation Process Theory", "en": "NPT" }, "type": "theory", "focus": ["coherence", "cognitive_participation", "collective_action", "reflexive_monitoring"], "citation": "May CR & Finch T (2009). Sociology, 43(3):535-554" },
+    { "id": "F07", "name": "TDF", "label": { "fr": "TDF - Theoretical Domains Framework", "en": "TDF" }, "type": "determinant", "focus": ["behavior_change", "domains"], "citation": "Cane J et al. (2012). Implementation Science, 7:37" },
+    { "id": "F08", "name": "PRISM", "label": { "fr": "PRISM", "en": "PRISM Framework" }, "type": "hybrid", "focus": ["organizational", "patient", "sustainability"], "citation": "Feldstein AC & Glasgow RE (2008). Joint Commission J Qual Patient Saf, 34(4):228-243" }
+  ]
+}

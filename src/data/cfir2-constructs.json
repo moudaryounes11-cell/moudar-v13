@@ -1,0 +1,82 @@
+{
+  "citation": "Damschroder LJ, Reardon CM, Widerquist MAO, Lowery J. The Updated Consolidated Framework for Implementation Research Based on User Feedback. Implementation Science. 2022;17:75",
+  "doi": "10.1186/s13012-022-01245-0",
+  "version": "2.0",
+  "totalConstructs": 39,
+  "domains": {
+    "innovation": {
+      "id": "innovation",
+      "label": { "fr": "Innovation", "en": "Innovation" },
+      "description": { "fr": "Caractéristiques de l'innovation implémentée", "en": "Key attributes of the innovation being implemented" },
+      "constructs": [
+        { "id": "IC1", "name": { "fr": "Source de l'innovation", "en": "Innovation Source" }, "weight": 0.8, "cfir2Note": "Perception of key stakeholders about whether the innovation is externally or internally developed" },
+        { "id": "IC2", "name": { "fr": "Preuves de l'innovation", "en": "Innovation Evidence" }, "weight": 1.0, "cfir2Note": "Renamed from Evidence Strength & Quality in CFIR 2.0" },
+        { "id": "IC3", "name": { "fr": "Avantage relatif", "en": "Relative Advantage" }, "weight": 0.9, "cfir2Note": "Stakeholders perception of the advantage of the innovation vs. alternative solutions" },
+        { "id": "IC4", "name": { "fr": "Adaptabilité", "en": "Adaptability" }, "weight": 0.95, "cfir2Note": "The degree to which the innovation can be adapted to meet local needs" },
+        { "id": "IC5", "name": { "fr": "Testabilité", "en": "Trialability" }, "weight": 0.7, "cfir2Note": "The ability to test the innovation on a small scale" },
+        { "id": "IC6", "name": { "fr": "Complexité", "en": "Complexity" }, "weight": 0.85, "cfir2Note": "Perceived difficulty of the innovation" },
+        { "id": "IC7", "name": { "fr": "Conception de l'innovation", "en": "Innovation Design" }, "weight": 0.8, "cfir2Note": "NEW in CFIR 2.0 — How the innovation is bundled, presented, assembled" },
+        { "id": "IC8", "name": { "fr": "Coût", "en": "Cost" }, "weight": 0.8, "cfir2Note": "Costs of the innovation and its implementation" }
+      ]
+    },
+    "outerSetting": {
+      "id": "outerSetting",
+      "label": { "fr": "Contexte Externe", "en": "Outer Setting" },
+      "description": { "fr": "Contexte économique, politique et social au-delà de l'organisation", "en": "The economic, political, and social context beyond the implementing organization" },
+      "constructs": [
+        { "id": "OS1", "name": { "fr": "Incidents critiques", "en": "Critical Incidents" }, "weight": 0.75, "cfir2Note": "NEW in CFIR 2.0 — Discrete events that influence implementation" },
+        { "id": "OS2", "name": { "fr": "Attitudes locales", "en": "Local Attitudes" }, "weight": 0.8, "cfir2Note": "NEW in CFIR 2.0 — Sociocultural values and beliefs of the local community" },
+        { "id": "OS3", "name": { "fr": "Conditions locales", "en": "Local Conditions" }, "weight": 0.85, "cfir2Note": "Social, economic, and environmental conditions" },
+        { "id": "OS4", "name": { "fr": "Partenariats et connexions", "en": "Partnerships & Connections" }, "weight": 0.85, "cfir2Note": "Relationships between the implementing organization and external entities" },
+        { "id": "OS5", "name": { "fr": "Politiques et lois", "en": "Policies & Laws" }, "weight": 0.9, "cfir2Note": "Renamed from External Policies & Incentives in CFIR 2.0" },
+        { "id": "OS6", "name": { "fr": "Financement", "en": "Financing" }, "weight": 0.95, "cfir2Note": "External financing structures and mechanisms" },
+        { "id": "OS7", "name": { "fr": "Pression externe", "en": "External Pressure" }, "weight": 0.65, "cfir2Note": "Renamed from Peer Pressure in CFIR 2.0" }
+      ]
+    },
+    "innerSetting": {
+      "id": "innerSetting",
+      "label": { "fr": "Contexte Interne", "en": "Inner Setting" },
+      "description": { "fr": "Caractéristiques structurelles, politiques et culturelles de l'organisation", "en": "Structural, political, and cultural context" },
+      "constructs": [
+        { "id": "IS1", "name": { "fr": "Caractéristiques structurelles", "en": "Structural Characteristics" }, "weight": 0.75 },
+        { "id": "IS2", "name": { "fr": "Connexions relationnelles", "en": "Relational Connections" }, "weight": 0.85 },
+        { "id": "IS3", "name": { "fr": "Communications", "en": "Communications" }, "weight": 0.8, "cfir2Note": "NEW as separate construct in CFIR 2.0" },
+        { "id": "IS4", "name": { "fr": "Culture", "en": "Culture" }, "weight": 0.9 },
+        { "id": "IS5", "name": { "fr": "Tension pour le changement", "en": "Tension for Change" }, "weight": 0.85 },
+        { "id": "IS6", "name": { "fr": "Compatibilité", "en": "Compatibility" }, "weight": 0.9 },
+        { "id": "IS7", "name": { "fr": "Priorité relative", "en": "Relative Priority" }, "weight": 0.85 },
+        { "id": "IS8", "name": { "fr": "Incitations et récompenses", "en": "Incentive Rewards" }, "weight": 0.7 },
+        { "id": "IS9", "name": { "fr": "Objectifs et retours", "en": "Goals & Feedback" }, "weight": 0.8 },
+        { "id": "IS10", "name": { "fr": "Climat d'apprentissage", "en": "Learning Climate" }, "weight": 0.85 },
+        { "id": "IS11", "name": { "fr": "Engagement du leadership", "en": "Leadership Engagement" }, "weight": 1.0 },
+        { "id": "IS12", "name": { "fr": "Ressources disponibles", "en": "Available Resources" }, "weight": 0.95 },
+        { "id": "IS13", "name": { "fr": "Accès aux connaissances", "en": "Access to Knowledge & Information" }, "weight": 0.8 },
+        { "id": "IS14", "name": { "fr": "Alignement avec la mission", "en": "Mission Alignment" }, "weight": 0.85, "cfir2Note": "NEW in CFIR 2.0" }
+      ]
+    },
+    "individuals": {
+      "id": "individuals",
+      "label": { "fr": "Individus", "en": "Individuals" },
+      "description": { "fr": "Rôles et caractéristiques des individus", "en": "Roles and characteristics of individuals" },
+      "constructs": [
+        { "id": "IN1", "name": { "fr": "Besoin", "en": "Need" }, "weight": 0.9, "cfir2Note": "NEW in CFIR 2.0" },
+        { "id": "IN2", "name": { "fr": "Capacité", "en": "Capability" }, "weight": 0.9, "cfir2Note": "Aligned with COM-B (Michie 2011)" },
+        { "id": "IN3", "name": { "fr": "Opportunité", "en": "Opportunity" }, "weight": 0.85, "cfir2Note": "Aligned with COM-B" },
+        { "id": "IN4", "name": { "fr": "Motivation", "en": "Motivation" }, "weight": 0.95, "cfir2Note": "Aligned with COM-B" },
+        { "id": "IN5", "name": { "fr": "Acteurs de l'innovation", "en": "Innovation Deliverers" }, "weight": 0.85, "cfir2Note": "NEW in CFIR 2.0" }
+      ]
+    },
+    "process": {
+      "id": "process",
+      "label": { "fr": "Processus", "en": "Process" },
+      "description": { "fr": "Activités essentielles au processus d'implémentation", "en": "Essential activities of the implementation process" },
+      "constructs": [
+        { "id": "PR1", "name": { "fr": "Évaluation du contexte", "en": "Assessing Context" }, "weight": 0.9, "cfir2Note": "NEW in CFIR 2.0" },
+        { "id": "PR2", "name": { "fr": "Planification", "en": "Planning" }, "weight": 0.95 },
+        { "id": "PR3", "name": { "fr": "Engagement", "en": "Engaging" }, "weight": 0.9 },
+        { "id": "PR4", "name": { "fr": "Exécution", "en": "Executing" }, "weight": 1.0 },
+        { "id": "PR5", "name": { "fr": "Réflexion et évaluation", "en": "Reflecting & Evaluating" }, "weight": 0.85 }
+      ]
+    }
+  }
+}

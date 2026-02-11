@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════════════════════════════════
+   MOUDAR v9.0 - Core Styles
+   ═══════════════════════════════════════════════════════════════════════ */
+
+* { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+
+/* Base Gradients */
+.gradient-main { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%); }
+.gradient-hero { background: linear-gradient(135deg, #3b82f6 0%, #10b981 50%, #3b82f6 100%); }
+
+/* Card Interactions */
+.card-hover { transition: all 0.3s ease; }
+.card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+
+/* Animations */
+.fade-in { animation: fadeIn 0.4s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+.animate-fade-in { animation: fadeIn 0.3s ease-out; }
+.animate-slide-up { animation: slideUp 0.3s ease-out; }
+@keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+.animate-pulse-subtle { animation: pulseSub 2s ease-in-out infinite; }
+@keyframes pulseSub { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+
+/* Pricing Cards */
+.price-card { transition: all 0.3s ease; }
+.price-card:hover { transform: scale(1.02); }
+.price-popular { box-shadow: 0 0 0 3px #10b981, 0 20px 40px rgba(16, 185, 129, 0.3); }
+
+/* Tooltips */
+.tooltip-container { position: relative; }
+.tooltip-container .tooltip-text { visibility: hidden; opacity: 0; position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); background: #1e293b; color: white; padding: 8px 12px; border-radius: 8px; font-size: 12px; white-space: nowrap; z-index: 50; transition: all 0.2s; margin-bottom: 8px; }
+.tooltip-container:hover .tooltip-text { visibility: visible; opacity: 1; }
+
+/* Status Badges */
+.status-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 9999px; font-size: 11px; font-weight: 500; }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   ACCESSIBILITY ENHANCEMENTS
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* Focus styles for keyboard navigation */
+:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Skip to main content link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #0f172a;
+  color: white;
+  padding: 8px 16px;
+  z-index: 10000;
+  transition: top 0.3s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .card-hover { border: 2px solid currentColor; }
+  .gradient-main, .gradient-hero { background: #000; }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   RESPONSIVE BREAKPOINTS
+   ═══════════════════════════════════════════════════════════════════════ */
+
+@media (max-width: 640px) {
+  html { font-size: 14px; }
+  .moudar-gold-btn {
+    padding: 10px 16px;
+    font-size: 12px;
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html { font-size: 16px; }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   MOUDAR v9.0 - Bouton Demo Gold Standard
+   ═══════════════════════════════════════════════════════════════════════ */
+.moudar-gold-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #fbbf24;
+  border: 2px solid #fbbf24;
+  padding: 14px 24px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(251, 191, 36, 0.3), 0 0 40px rgba(251, 191, 36, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  font-family: system-ui, -apple-system, sans-serif;
+  animation: goldPulse 2s infinite;
+}
+.moudar-gold-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(251, 191, 36, 0.5), 0 0 60px rgba(251, 191, 36, 0.2);
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #0f172a;
+}
+.moudar-gold-btn svg { width: 22px; height: 22px; }
+.moudar-gold-btn.loading { pointer-events: none; opacity: 0.7; }
+@keyframes goldPulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(251, 191, 36, 0.3), 0 0 40px rgba(251, 191, 36, 0.1); }
+  50% { box-shadow: 0 4px 25px rgba(251, 191, 36, 0.5), 0 0 50px rgba(251, 191, 36, 0.2); }
+}
+.moudar-gold-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(8px);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+.moudar-gold-modal-content {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border: 2px solid #fbbf24;
+  border-radius: 24px;
+  padding: 40px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 0 80px rgba(251, 191, 36, 0.3);
+}

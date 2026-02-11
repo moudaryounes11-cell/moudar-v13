@@ -1,0 +1,22 @@
+{
+  "citation": "Derived from: Waltz TJ et al. (2019). ERIC strategies mapped to CFIR barriers. Implementation Science, 14:67",
+  "description": "Mapping of implementation barriers (B01-B15) to recommended ERIC strategies (S01-S20) with effectiveness scores (0-1)",
+  "methodology_note": "Scores are heuristic estimates based on expert consensus and literature review, not empirically validated coefficients",
+  "matrix": {
+    "B01_lack_of_training": { "S01": 0.95, "S03": 0.60, "S09": 0.70, "S14": 0.80, "S15": 0.50 },
+    "B02_insufficient_resources": { "S04": 0.85, "S03": 0.75, "S20": 0.70, "S08": 0.50, "S02": 0.60 },
+    "B03_inadequate_data_systems": { "S13": 0.90, "S09": 0.80, "S17": 0.85, "S05": 0.50 },
+    "B04_poor_data_quality": { "S13": 0.85, "S02": 0.70, "S16": 0.75, "S09": 0.60 },
+    "B05_resistance_to_change": { "S08": 0.90, "S18": 0.80, "S04": 0.60, "S11": 0.70 },
+    "B06_leadership_problems": { "S06": 0.80, "S12": 0.75, "S07": 0.70, "S19": 0.65 },
+    "B07_excessive_workload": { "S04": 0.90, "S12": 0.80, "S20": 0.85, "S07": 0.60 },
+    "B08_staff_turnover": { "S19": 0.80, "S11": 0.70, "S05": 0.60, "S02": 0.50 },
+    "B09_cultural_barriers": { "S11": 0.85, "S08": 0.80, "S20": 0.70, "S18": 0.60 },
+    "B10_context_mismatch": { "S11": 0.80, "S03": 0.70, "S01": 0.65, "S09": 0.60 },
+    "B11_weak_communication": { "S20": 0.85, "S14": 0.70, "S04": 0.65, "S02": 0.60 },
+    "B12_no_policy_support": { "S07": 0.90, "S12": 0.80, "S20": 0.75 },
+    "B13_low_patient_engagement": { "S18": 0.90, "S08": 0.85, "S11": 0.60 },
+    "B14_skills_gap": { "S01": 0.70, "S10": 0.80, "S14": 0.65, "S15": 0.70 },
+    "B15_poor_implementation_quality": { "S11": 0.75, "S16": 0.70, "S02": 0.65, "S14": 0.60 }
+  }
+}

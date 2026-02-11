@@ -1,0 +1,16 @@
+{
+  "citation": "Proctor E et al. (2011). Implementation outcomes: conceptual distinctions, measurement challenges. Administration and Policy in Mental Health, 38(2):65-76",
+  "doi": "10.1007/s10488-010-0319-7",
+  "outcomes": [
+    { "id": "O01", "name": "acceptability", "label": { "fr": "Acceptabilité", "en": "Acceptability" }, "level": "implementation", "measurability": "high" },
+    { "id": "O02", "name": "adoption", "label": { "fr": "Adoption", "en": "Adoption" }, "level": "implementation", "measurability": "high" },
+    { "id": "O03", "name": "appropriateness", "label": { "fr": "Pertinence", "en": "Appropriateness" }, "level": "implementation", "measurability": "medium" },
+    { "id": "O04", "name": "feasibility", "label": { "fr": "Faisabilité", "en": "Feasibility" }, "level": "implementation", "measurability": "high" },
+    { "id": "O05", "name": "fidelity", "label": { "fr": "Fidélité", "en": "Fidelity" }, "level": "implementation", "measurability": "high" },
+    { "id": "O06", "name": "cost", "label": { "fr": "Coût", "en": "Cost" }, "level": "implementation", "measurability": "high" },
+    { "id": "O07", "name": "penetration", "label": { "fr": "Pénétration/Couverture", "en": "Penetration/Coverage" }, "level": "implementation", "measurability": "high" },
+    { "id": "O08", "name": "sustainability", "label": { "fr": "Pérennité", "en": "Sustainability" }, "level": "implementation", "measurability": "medium" },
+    { "id": "O09", "name": "equity", "label": { "fr": "Équité", "en": "Equity" }, "level": "service", "measurability": "medium" },
+    { "id": "O10", "name": "effectiveness", "label": { "fr": "Efficacité", "en": "Effectiveness" }, "level": "client", "measurability": "high" }
+  ]
+}
